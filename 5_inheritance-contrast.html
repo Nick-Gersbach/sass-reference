@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sass | Inheritance &amp Contrast</title>
+</head>
+
+<!-- Notes -->
+
+<!-- 
+
+    You can share properties between 2 different elements using &-property-shared syntax.
+
+    For example - Instead of having a btn-dark btn-light you can do the following ...
+
+    %btn-shared {
+    display: inline-block;
+    padding: 0.7rem 2rem;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 1rem;
+}
+
+.btn {
+    &-light {
+        @extend %btn-shared;
+        background-color: $light-color;
+        color: #333;
+    }
+
+    &-dark {
+        @extend %btn-shared;
+        background-color: $dark-color;
+        color: #fff;
+    }
+}
+
+%btn-shared gives the same properties to both buttons and &-dark and &-light give them their own sperate styling based on if they are light and dark.
+
+ -->
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nesting and Structuring Sass</title>
+    <!--Notes-->
+    <!--  
+       You can nest elements inside of each other when using sass like with html. However, you can only nest elements and classes that are children of an element in your html markup.
+       
+       Example - 
+
+       header {
+    background: $dark-color;
+    color: $light-color;
+    padding: 1rem;
+    
+    h1 {
+        text-align: center;
+    }
+}
+
+Since the h1 in the HTML markup is nested within the header, you can nest them in your sass file and style them
+
+&-value - the & takes the place of the html selector for a given section and allows you to nest more styles within one selector 
+Visual example - 
+
+.section {
+    padding: 3rem;
+
+    h3 {
+        font-size: 2rem;
+    }
+
+    &-a {
+        background: $primary-color;
+        color: #fff;
+    }
+    &-b {
+        background: $secondary-color;
+        color: #fff;
+    }
+}
+
+the &-a and &-b are shorthand for .section section-a .section section-b which is how it's written in the HTML markup
+
+You can also use & with pseudo selectors
+
+Visual Example - 
+
+a {
+    color: #333;
+
+    &:hover {
+        color: red;
+    }
+}
+
+the &-a thing is optional but it helps in organization
+    -->
+</head>
+
+<body>
+
+</body>
+
+</html>
